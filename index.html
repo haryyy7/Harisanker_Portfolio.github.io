@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Harisanker A — Full-Stack Developer, AI/ML Engineer, and Cloud & DevOps Enthusiast based in Alappuzha, Kerala. View projects, skills, and contact info." />
+  <meta name="keywords" content="Harisanker, portfolio, full-stack developer, AI ML engineer, DevOps, cloud, Kerala, India" />
+  <meta name="author" content="Harisanker A" />
+  <meta property="og:title" content="Harisanker A — Developer Portfolio" />
+  <meta property="og:description" content="Full-Stack Developer | AI/ML Engineer | Cloud & DevOps Enthusiast" />
+  <meta property="og:type" content="website" />
+  <title>Harisanker A — Developer Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ========== CANVAS BACKGROUND ========== -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ========== NAV ========== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>hari<span class="logo-accent">.</span>dev<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="resume.pdf" download class="btn-resume" id="nav-resume-btn">
+          <i class="fas fa-download"></i> Resume
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section id="hero">
+    <!-- Open to Work badge -->
+    <div class="open-to-work-badge" id="open-to-work-badge">
+      <span class="pulse-dot"></span>
+      Open to Work
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-greeting">👋 Hi, I'm</div>
+      <h1 class="hero-name">Harisanker A</h1>
+      <div class="typewriter-wrapper">
+        <span class="typewriter-prefix">&gt; </span>
+        <span id="typewriter"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-location">
+        <i class="fas fa-map-marker-alt"></i> Alappuzha, Kerala, India
+      </p>
+
+      <!-- Currently Learning badge -->
+      <div class="learning-badge">
+        <span class="live-dot"></span>
+        Currently Learning: <strong>Kubernetes + CI/CD Pipelines</strong>
+      </div>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary" id="view-work-btn">
+          <span>View My Work</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="resume.pdf" download class="btn-secondary" id="download-resume-btn">
+          <i class="fas fa-download"></i>
+          <span>Download Resume</span>
+        </a>
+      </div>
+
+      <div class="hero-socials">
+        <a href="https://github.com/haryyy7" target="_blank" rel="noopener" class="social-link" id="github-hero-link" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/harisankera/" target="_blank" rel="noopener" class="social-link" id="linkedin-hero-link" title="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:harisankeranil12@gmail.com" class="social-link" id="email-hero-link" title="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// about_me</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-avatar-wrap reveal">
+          <div class="about-avatar">
+            <div class="avatar-ring"></div>
+            <div class="avatar-inner">
+              <span class="avatar-initials">HA</span>
+            </div>
+            <div class="avatar-glow"></div>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card reveal">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Projects Shipped</span>
+            </div>
+            <div class="stat-card reveal">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Technologies</span>
+            </div>
+            <div class="stat-card reveal">
+              <span class="stat-number">∞</span>
+              <span class="stat-label">Curiosity</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <p>
+            Recent <strong>B.Tech Computer Science</strong> graduate with a strong passion for building intelligent systems and scalable cloud-native applications. I work at the intersection of <span class="highlight">AI/ML</span>, <span class="highlight">full-stack development</span>, and <span class="highlight">DevOps</span> — with hands-on experience deploying real-world models and architecting SaaS products from scratch.
+          </p>
+          <p>
+            I believe in building things that matter — from medical AI tools that assist doctors, to SaaS platforms that empower Indian entrepreneurs. When I'm not coding, I apply the same analytical mindset to technical analysis and intraday trading in stock markets.
+          </p>
+          <p>
+            I'm actively seeking roles in <strong>Cloud Engineering</strong>, <strong>DevOps</strong>, or <strong>Full-Stack/AI development</strong> where I can grow, ship fast, and make an impact.
+          </p>
+          <div class="about-tags">
+            <span class="tag">🤖 AI/ML</span>
+            <span class="tag">☁️ Cloud</span>
+            <span class="tag">⚡ DevOps</span>
+            <span class="tag">🌐 Full-Stack</span>
+            <span class="tag">🚀 SaaS</span>
+            <span class="tag">📈 Trading</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// skill_set</span>
+        <h2 class="section-title">Skills & Technologies</h2>
+      </div>
+
+      <div class="skills-grid">
+        <!-- AI / ML -->
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <i class="fas fa-brain skill-icon ai-icon"></i>
+            <h3>AI / Machine Learning</h3>
+          </div>
+          <div class="skill-badges">
+            <span class="badge badge-ai">Python</span>
+            <span class="badge badge-ai">PyTorch</span>
+            <span class="badge badge-ai">TensorFlow</span>
+            <span class="badge badge-ai">Vision Transformers (ViT)</span>
+            <span class="badge badge-ai">CNNs</span>
+            <span class="badge badge-ai">Hugging Face</span>
+            <span class="badge badge-ai">Gradio</span>
+            <span class="badge badge-ai">LangChain</span>
+            <span class="badge badge-ai">CrewAI</span>
+            <span class="badge badge-ai">Kaggle</span>
+          </div>
+        </div>
+
+        <!-- Full-Stack -->
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <i class="fas fa-code skill-icon fs-icon"></i>
+            <h3>Full-Stack Development</h3>
+          </div>
+          <div class="skill-badges">
+            <span class="badge badge-fs">JavaScript</span>
+            <span class="badge badge-fs">Node.js</span>
+            <span class="badge badge-fs badge-learning">React <span class="learning-tag">learning</span></span>
+            <span class="badge badge-fs badge-learning">MERN Stack <span class="learning-tag">learning</span></span>
+            <span class="badge badge-fs">REST APIs</span>
+            <span class="badge badge-fs">HTML / CSS</span>
+          </div>
+        </div>
+
+        <!-- Cloud & DevOps -->
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <i class="fas fa-cloud skill-icon devops-icon"></i>
+            <h3>Cloud & DevOps</h3>
+          </div>
+          <div class="skill-badges">
+            <span class="badge badge-devops">Docker</span>
+            <span class="badge badge-devops badge-learning">Kubernetes <span class="learning-tag">learning</span></span>
+            <span class="badge badge-devops">Linux</span>
+            <span class="badge badge-devops">Bash Scripting</span>
+            <span class="badge badge-devops">CI/CD Pipelines</span>
+            <span class="badge badge-devops">GitHub Actions</span>
+            <span class="badge badge-devops badge-learning">Jenkins <span class="learning-tag">learning</span></span>
+            <span class="badge badge-devops">KodeKloud Labs ✅</span>
+          </div>
+        </div>
+
+        <!-- Tools & Platforms -->
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <i class="fas fa-tools skill-icon tools-icon"></i>
+            <h3>Tools & Platforms</h3>
+          </div>
+          <div class="skill-badges">
+            <span class="badge badge-tools">Git</span>
+            <span class="badge badge-tools">GitHub</span>
+            <span class="badge badge-tools">VSCode</span>
+            <span class="badge badge-tools">Google Colab</span>
+            <span class="badge badge-tools">Kaggle Notebooks</span>
+            <span class="badge badge-tools">Lovable</span>
+            <span class="badge badge-tools">Claude Code</span>
+            <span class="badge badge-tools">Cursor</span>
+          </div>
+        </div>
+
+        <!-- Other -->
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <i class="fas fa-star skill-icon other-icon"></i>
+            <h3>Other Skills</h3>
+          </div>
+          <div class="skill-badges">
+            <span class="badge badge-other">Technical Analysis</span>
+            <span class="badge badge-other">Intraday Trading</span>
+            <span class="badge badge-other">SaaS Product Design</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// projects</span>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card reveal" id="project-brain-tumor">
+          <div class="project-card-glow"></div>
+          <div class="project-header">
+            <div class="project-icon-wrap">
+              <i class="fas fa-brain"></i>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/haryyy7" target="_blank" rel="noopener" title="GitHub" class="project-link-btn">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://huggingface.co/" target="_blank" rel="noopener" title="Live Demo" class="project-link-btn project-demo-btn">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Brain Tumor Classification</h3>
+            <p class="project-subtitle">Hybrid ViT-CNN Architecture</p>
+            <p class="project-desc">
+              Deep learning model for classifying brain tumors (Glioma detection) using a hybrid Vision Transformer + CNN architecture. Deployed as a Hugging Face Space with a Gradio interface for real-time image-based inference.
+            </p>
+            <div class="project-tags">
+              <span class="ptag ptag-ai">AI/ML</span>
+              <span class="ptag ptag-ai">Computer Vision</span>
+              <span class="ptag ptag-ai">Medical AI</span>
+              <span class="ptag ptag-ai">HuggingFace</span>
+            </div>
+            <div class="project-stack">
+              <span class="stack-item">Python</span>
+              <span class="stack-item">PyTorch</span>
+              <span class="stack-item">ViT</span>
+              <span class="stack-item">CNN</span>
+              <span class="stack-item">Gradio</span>
+              <span class="stack-item">Hugging Face</span>
+              <span class="stack-item">Kaggle</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal" id="project-dropship">
+          <div class="project-card-glow glow-purple"></div>
+          <div class="project-header">
+            <div class="project-icon-wrap icon-purple">
+              <i class="fas fa-store"></i>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/haryyy7" target="_blank" rel="noopener" title="GitHub" class="project-link-btn">
+                <i class="fab fa-github"></i>
+              </a>
+              <span class="project-wip-badge">MVP in Progress</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">DropShip India</h3>
+            <p class="project-subtitle">AI-Powered Dropshipping SaaS</p>
+            <p class="project-desc">
+              Full-stack SaaS platform for Indian dropshippers — combining AI product spy tools, ML-based RTO risk prediction for tier 2/3/4 cities, Shopify integration, logistics API integrations (Delhivery, Shiprocket), and a Premium Portfolio of 40 hand-curated products/week.
+            </p>
+            <div class="project-tags">
+              <span class="ptag ptag-saas">SaaS</span>
+              <span class="ptag ptag-saas">Full-Stack</span>
+              <span class="ptag ptag-saas">AI</span>
+              <span class="ptag ptag-saas">Automation</span>
+              <span class="ptag ptag-saas">Entrepreneurship</span>
+            </div>
+            <div class="project-stack">
+              <span class="stack-item">MERN Stack</span>
+              <span class="stack-item">Python</span>
+              <span class="stack-item">LangChain</span>
+              <span class="stack-item">Docker</span>
+              <span class="stack-item">Cloud</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card reveal" id="project-docker">
+          <div class="project-card-glow glow-green"></div>
+          <div class="project-header">
+            <div class="project-icon-wrap icon-green">
+              <i class="fab fa-docker"></i>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/haryyy7" target="_blank" rel="noopener" title="GitHub" class="project-link-btn">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Containerized App Deployments</h3>
+            <p class="project-subtitle">Docker & DevOps Practice</p>
+            <p class="project-desc">
+              Series of containerized Python Flask and web applications built using Docker, including multi-stage builds, Alpine-based lightweight images, and port-mapped deployments — demonstrating real-world DevOps workflows.
+            </p>
+            <div class="project-tags">
+              <span class="ptag ptag-devops">DevOps</span>
+              <span class="ptag ptag-devops">Docker</span>
+              <span class="ptag ptag-devops">Cloud</span>
+              <span class="ptag ptag-devops">Linux</span>
+            </div>
+            <div class="project-stack">
+              <span class="stack-item">Docker</span>
+              <span class="stack-item">Python</span>
+              <span class="stack-item">Flask</span>
+              <span class="stack-item">Linux</span>
+              <span class="stack-item">Bash</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION ========== -->
+  <section id="education" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// education</span>
+        <h2 class="section-title">Education & Learning</h2>
+      </div>
+
+      <div class="education-timeline">
+
+        <div class="edu-card reveal" id="edu-btech">
+          <div class="edu-icon-col">
+            <div class="edu-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="edu-line"></div>
+          </div>
+          <div class="edu-content">
+            <div class="edu-header">
+              <div>
+                <h3 class="edu-degree">B.Tech in Computer Science & Engineering</h3>
+                <p class="edu-institution">Kerala, India</p>
+              </div>
+              <span class="edu-badge">Graduate</span>
+            </div>
+            <p class="edu-desc">Relevant coursework: Data Structures, Algorithms, Operating Systems, Machine Learning, Cloud Computing</p>
+            <div class="edu-courses">
+              <span class="course-tag">Data Structures</span>
+              <span class="course-tag">Algorithms</span>
+              <span class="course-tag">Operating Systems</span>
+              <span class="course-tag">Machine Learning</span>
+              <span class="course-tag">Cloud Computing</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-card reveal" id="edu-kodekloud">
+          <div class="edu-icon-col">
+            <div class="edu-icon edu-icon-devops">
+              <i class="fas fa-cloud"></i>
+            </div>
+          </div>
+          <div class="edu-content">
+            <div class="edu-header">
+              <div>
+                <h3 class="edu-degree">KodeKloud — Cloud & DevOps Learning Path</h3>
+                <p class="edu-institution">Online Platform</p>
+              </div>
+              <span class="edu-badge edu-badge-progress">In Progress · 2026</span>
+            </div>
+            <p class="edu-desc">Hands-on certified labs covering Docker, Kubernetes, CI/CD pipelines, Linux administration, and Networking essentials.</p>
+            <div class="edu-courses">
+              <span class="course-tag">Docker</span>
+              <span class="course-tag">Kubernetes</span>
+              <span class="course-tag">CI/CD</span>
+              <span class="course-tag">Linux</span>
+              <span class="course-tag">Networking</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- GitHub Contribution Graph -->
+      <div class="github-section reveal">
+        <h3 class="github-section-title">
+          <i class="fab fa-github"></i> GitHub Activity
+        </h3>
+        <div class="github-graph-wrap">
+          <img
+            src="https://ghchart.rshah.org/00d9ff/haryyy7"
+            alt="Harisanker's GitHub contribution graph"
+            class="github-chart"
+            onerror="this.parentElement.innerHTML='<div class=\'github-fallback\'><i class=\'fab fa-github\'></i><p>View my activity on <a href=\'https://github.com/haryyy7\' target=\'_blank\'>GitHub ↗</a></p></div>'"
+          />
+        </div>
+        <a href="https://github.com/haryyy7" target="_blank" rel="noopener" class="github-profile-link">
+          <i class="fab fa-github"></i> @haryyy7 — View Full Profile
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== LOOKING FOR / CTA ========== -->
+  <section id="looking-for" class="section">
+    <div class="container">
+      <div class="cta-box reveal">
+        <div class="cta-glow"></div>
+        <span class="section-tag">// opportunities</span>
+        <h2 class="cta-title">What I'm Looking For</h2>
+        <p class="cta-sub">I'm actively seeking full-time opportunities, internships, and collaboration in:</p>
+        <div class="opportunity-grid">
+          <div class="opp-card">
+            <i class="fas fa-cloud"></i>
+            <span>Cloud Engineering / DevOps</span>
+          </div>
+          <div class="opp-card">
+            <i class="fas fa-code"></i>
+            <span>Full-Stack Development</span>
+            <small>MERN / Python</small>
+          </div>
+          <div class="opp-card">
+            <i class="fas fa-brain"></i>
+            <span>AI/ML Engineering</span>
+          </div>
+          <div class="opp-card">
+            <i class="fas fa-rocket"></i>
+            <span>SaaS / Startup</span>
+            <small>Environments</small>
+          </div>
+        </div>
+        <a href="#contact" class="btn-primary btn-large">
+          <span>Let's Connect</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// contact</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-sub">Have an opportunity, a project, or just want to say hello? I'm all ears.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-card" id="contact-email">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <p class="contact-label">Email</p>
+              <a href="mailto:harisankeranil12@gmail.com" class="contact-value">harisankeranil12@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-github">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <div>
+              <p class="contact-label">GitHub</p>
+              <a href="https://github.com/haryyy7" target="_blank" rel="noopener" class="contact-value">github.com/haryyy7</a>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-linkedin">
+            <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+            <div>
+              <p class="contact-label">LinkedIn</p>
+              <a href="https://www.linkedin.com/in/harisankera/" target="_blank" rel="noopener" class="contact-value">linkedin.com/in/harisankera</a>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-location">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <p class="contact-label">Location</p>
+              <span class="contact-value">Alappuzha, Kerala, India</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="contact-name">Name</label>
+            <input type="text" id="contact-name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="contact-email-field">Email</label>
+            <input type="email" id="contact-email-field" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="contact-subject">Subject</label>
+            <input type="text" id="contact-subject" name="subject" placeholder="What's this about?" required />
+          </div>
+          <div class="form-group">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" rows="5" placeholder="Tell me more..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-full" id="contact-submit-btn">
+            <span>Send Message</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+          <p class="form-note" id="form-note"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer id="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>hari<span class="logo-accent">.</span>dev<span class="logo-bracket">/&gt;</span>
+      </div>
+      <p class="footer-tagline">Designed & built by Harisanker A · 2025</p>
+      <div class="footer-socials">
+        <a href="https://github.com/haryyy7" target="_blank" rel="noopener" class="social-link" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/harisankera/" target="_blank" rel="noopener" class="social-link" title="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:harisankeranil12@gmail.com" class="social-link" title="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+      <p class="footer-built">Built with <span class="heart">♥</span> using HTML, CSS & JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
