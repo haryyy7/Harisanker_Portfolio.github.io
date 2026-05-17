@@ -156,11 +156,10 @@
   if (!el) return;
 
   const phrases = [
-    'Full-Stack Developer',
-    'AI / ML Engineer',
-    'Cloud & DevOps Enthusiast',
-    'SaaS Builder & Entrepreneur',
-    'Open Source Contributor',
+    'AI/ML Engineer',
+    'Cloud DevOps Engineer',
+    'SaaS Builder and Entrepreneur',
+    'Generative AI and Tools',
   ];
 
   let phraseIdx = 0;
