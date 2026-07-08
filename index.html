@@ -5,12 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
-    content="Harisanker A — Full-Stack Developer, AI/ML Engineer, and Cloud & DevOps Enthusiast based in Alappuzha, Kerala. View projects, skills, and contact info." />
+    content="Harisanker A — SRE, Systems Engineer, and Cloud/Infrastructure Engineer based in Alappuzha, Kerala. View projects, skills, and contact info." />
   <meta name="keywords"
-    content="Harisanker, portfolio, full-stack developer, AI ML engineer, DevOps, cloud, Kerala, India" />
+    content="Harisanker, portfolio, SRE, systems engineer, infrastructure engineer, DevOps, cloud, Kerala, India" />
   <meta name="author" content="Harisanker A" />
   <meta property="og:title" content="Harisanker A — Developer Portfolio" />
-  <meta property="og:description" content="Full-Stack Developer | AI/ML Engineer | Cloud & DevOps Enthusiast" />
+  <meta property="og:description" content="SRE | Systems Engineer | Cloud & Infrastructure Engineer" />
   <meta property="og:type" content="website" />
   <title>Harisanker A — Developer Portfolio</title>
 
@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Inter:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
     rel="stylesheet" />
 
   <!-- Icons -->
@@ -35,21 +35,19 @@
   <!-- ========== NAV ========== -->
   <nav id="navbar">
     <div class="nav-container">
-      <a href="#hero" class="nav-logo">
-        <span class="logo-bracket">&lt;</span>hari<span class="logo-accent">.</span>dev<span
-          class="logo-bracket">/&gt;</span>
+      <a href="#hero" class="nav-logo portfolio-brand" aria-label="Harisanker portfolio home">
+        <span class="brand-mark" aria-hidden="true">
+          <span></span>
+        </span>
+        <span>HARI. PORTFOLIO/2026</span>
       </a>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#certifications" class="nav-link">Certifications</a></li>
-        <li><a href="#education" class="nav-link">Education</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
+      <ul class="nav-links" id="nav-links"></ul>
       <div class="nav-right">
-        <a href="Harisanker_A_Resume.pdf" download="Harisanker_A_resume.pdf" class="btn-resume" id="nav-resume-btn">
-          <i class="fas fa-download"></i> Resume
+        <a href="Harisanker_A_Resume.pdf" download="Harisanker_A_resume.pdf" class="nav-link nav-resume-link" id="nav-resume-btn">
+          Resume
+        </a>
+        <a href="https://www.linkedin.com/in/harisankera/" target="_blank" rel="noopener" class="nav-link">
+          LinkedIn
         </a>
         <button class="hamburger" id="hamburger" aria-label="Toggle menu">
           <span></span><span></span><span></span>
@@ -60,53 +58,35 @@
 
   <!-- ========== HERO ========== -->
   <section id="hero">
-    <!-- Open to Work badge -->
-    <div class="open-to-work-badge" id="open-to-work-badge">
-      <span class="pulse-dot"></span>
-      Open to Work
-    </div>
-
     <div class="hero-content">
-      <div class="hero-greeting">👋 Hi, I'm</div>
-      <h1 class="hero-name">Harisanker A</h1>
-      <div class="typewriter-wrapper">
-        <span class="typewriter-prefix">&gt; </span>
-        <span id="typewriter"></span>
-        <span class="cursor-blink">|</span>
-      </div>
-      <p class="hero-location">
-        <i class="fas fa-map-marker-alt"></i> Kerala, India
-      </p>
+      <h1 class="hero-name">
+        <span>Harisanker</span>
+        <span>A</span>
+      </h1>
 
-      <!-- Currently Learning badge -->
-      <div class="learning-badge">
-        <span class="live-dot"></span>
-        Currently Learning: <strong>Kubernetes + CI/CD Pipelines</strong>
-      </div>
+      <a
+        class="hero-symbol"
+        href="https://wa.me/917907988948?text=Hi%20Hari.%20I%20noticed%20your%20profile%20and%20saw%20you%20are%20open%20to%20new%20opportunities!%20Do%20you%20have%2010%20minutes%20for%20a%20quick%20chat%20this%20week%3F%20Let%20me%20know%20what%20time%20works%20best%20for%20you."
+        target="_blank"
+        rel="noopener"
+        aria-label="DM on WhatsApp to connect"
+        data-tooltip="DM on whatsapp to connect"
+      >
+        <span class="avatar-hair"></span>
+        <span class="avatar-face"></span>
+        <span class="avatar-ear avatar-ear-left"></span>
+        <span class="avatar-ear avatar-ear-right"></span>
+        <span class="avatar-eyes"></span>
+        <span class="avatar-mouth"></span>
+        <span class="avatar-body"></span>
+      </a>
 
-      <div class="hero-cta">
-        <a href="#projects" class="btn-primary" id="view-work-btn">
-          <span>View My Work</span>
-          <i class="fas fa-arrow-right"></i>
-        </a>
-        <a href="Harisanker_A_Resume.pdf" download="Harisanker_A_resume.pdf" class="btn-secondary" id="download-resume-btn">
-          <i class="fas fa-download"></i>
-          <span>Download Resume</span>
-        </a>
-      </div>
+      <p class="hero-role-strip">Cloud Engineer . DevOps Engineer . Systems Admin</p>
 
-      <div class="hero-socials">
-        <a href="https://github.com/haryyy7" target="_blank" rel="noopener" class="social-link" id="github-hero-link"
-          title="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/harisankera/" target="_blank" rel="noopener" class="social-link"
-          id="linkedin-hero-link" title="LinkedIn">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="mailto:harisankeranil12@gmail.com" class="social-link" id="email-hero-link" title="Email">
-          <i class="fas fa-envelope"></i>
-        </a>
+      <div class="hero-meta">
+        <span>Kerala, India</span>
+        <span>Open to relocation</span>
+        <span>Hybrid modes</span>
       </div>
     </div>
 
@@ -145,28 +125,28 @@
         </div>
         <div class="about-text reveal">
           <p>
-            I’m a <strong>Computer Science engineering graduate</strong> specializing in <strong>AI, machine learning,
-              and cloud-native development</strong>, with a strong interest in building real-world products at the
-            intersection of tech, business, and finance. I actively explore DevOps practices, Docker, and cloud
-            platforms to deploy scalable solutions.
+            I’m a <strong>Computer Science engineering graduate</strong> focused on <strong>cloud infrastructure,
+              Linux systems, DevOps, and reliability engineering</strong>. During college I was more interested in the
+            development side of software, but over time I found the infrastructure side more interesting because it
+            connects software, systems, security, and real operations.
           </p>
           <p>
-            My core skills include <strong>machine learning, generative AI, cloud computing, and DevOps</strong>, and I
-            enjoy taking ideas from experimentation to deployment with clean, maintainable code. I’m also passionate
-            about financial markets, intraday trading, and understanding business models, which helps me think about
-            technology not just as code, but as a lever for real-world impact.
+            My core skills include <strong>Linux, Docker, Bash, CI/CD pipelines, GitHub Actions, Jenkins, networking
+              fundamentals, and production troubleshooting</strong>. I enjoy turning rough ideas into reliable
+            deployments with clean, maintainable automation. I’m also interested in financial markets and business
+            models, which helps me think about technology as a practical lever for real-world outcomes.
           </p>
           <p>
-            I’m currently looking for opportunities where I can contribute to <strong>AI/ML, cloud, or startup
-              teams</strong>, learn from experienced engineers and founders, and help build products that are
-            technically solid and commercially meaningful.
+            I’m aspiring to set up home labs, self-host useful paid services, and deploy tools that solve day-to-day
+            needs and pain points without depending on third parties where possible. The goal is to understand systems
+            deeply, own the full stack of operations, and keep security as a first-class priority.
           </p>
           <div class="about-tags">
-            <span class="tag">🤖 AI/ML Engineer</span>
+            <span class="tag">SRE / PRE</span>
+            <span class="tag">Systems Engineer</span>
             <span class="tag">☁️ Cloud &amp; DevOps</span>
-            <span class="tag">🚀 SaaS Builder</span>
-            <span class="tag">✨ Generative AI</span>
-            <span class="tag">🧠 Medical AI</span>
+            <span class="tag">Linux &amp; Networking</span>
+            <span class="tag">Kubernetes</span>
             <span class="tag">📈 Trading</span>
           </div>
         </div>
@@ -183,24 +163,6 @@
       </div>
 
       <div class="skills-grid">
-        <!-- AI / ML -->
-        <div class="skill-category reveal">
-          <div class="skill-category-header">
-            <i class="fas fa-brain skill-icon ai-icon"></i>
-            <h3>AI / Machine Learning</h3>
-          </div>
-          <div class="skill-badges">
-            <span class="badge badge-ai">Python</span>
-            <span class="badge badge-ai">PyTorch</span>
-            <span class="badge badge-ai">TensorFlow</span>
-            <span class="badge badge-ai">Vision Transformers (ViT)</span>
-            <span class="badge badge-ai">CNNs</span>
-            <span class="badge badge-ai">Hugging Face</span>
-            <span class="badge badge-ai">Gradio</span>
-            <span class="badge badge-ai">Kaggle</span>
-          </div>
-        </div>
-
         <!-- Cloud & DevOps -->
         <div class="skill-category reveal">
           <div class="skill-category-header">
@@ -215,11 +177,9 @@
             <span class="badge badge-devops">CI/CD Pipelines</span>
             <span class="badge badge-devops">GitHub Actions</span>
             <span class="badge badge-devops">Jenkins</span>
-            <span class="badge badge-devops">Ansible</span>
-            <span class="badge badge-devops">Terraform</span>
-            <span class="badge badge-devops">KodeKloud Labs ✅</span>
-            <span class="badge badge-devops badge-learning">Currently Learning <span class="learning-tag">in
-                progress</span></span>
+            <span class="badge badge-devops">Networking Basics</span>
+            <span class="badge badge-devops">IT Operations</span>
+            <span class="badge badge-devops">KodeKloud Labs</span>
           </div>
         </div>
 
@@ -235,7 +195,7 @@
             <span class="badge badge-tools">VSCode</span>
             <span class="badge badge-tools">Google Colab</span>
             <span class="badge badge-tools">Kaggle Notebooks</span>
-            <span class="badge badge-tools">Antigravity</span>
+            <span class="badge badge-tools">AI Coding Tools</span>
             <span class="badge badge-tools">Vercel</span>
             <span class="badge badge-tools">Supabase</span>
             <span class="badge badge-tools">OpenClaw</span>
@@ -563,7 +523,6 @@
 
       </div>
     </div>
-    </div>
   </section>
 
   <!-- ========== LOOKING FOR / CTA ========== -->
@@ -573,30 +532,29 @@
         <div class="cta-glow"></div>
         <span class="section-tag">// opportunities</span>
         <h2 class="cta-title">What I'm Looking For</h2>
-        <p class="cta-sub">I'm actively seeking full-time opportunities, internships, and collaboration in:</p>
+        <p class="cta-sub">I'm actively seeking full-time opportunities, internships, and collaboration in cloud and infrastructure teams:</p>
         <div class="opportunity-grid">
           <div class="opp-card">
             <i class="fas fa-cloud"></i>
-            <span>Cloud Engineering / DevOps</span>
+            <span>Cloud Engineering</span>
+          </div>
+          <div class="opp-card">
+            <i class="fas fa-code-branch"></i>
+            <span>DevOps Engineering</span>
           </div>
           <div class="opp-card">
             <i class="fas fa-server"></i>
             <span>Site Reliability Engineering</span>
           </div>
           <div class="opp-card">
-            <i class="fas fa-brain"></i>
-            <span>AI/ML Engineering</span>
+            <i class="fas fa-network-wired"></i>
+            <span>Platform Reliability Engineering</span>
           </div>
           <div class="opp-card">
-            <i class="fas fa-rocket"></i>
-            <span>SaaS / Startup</span>
-            <small>Environments</small>
+            <i class="fas fa-terminal"></i>
+            <span>Linux Admin / IT Operations</span>
           </div>
         </div>
-        <a href="#contact" class="btn-primary btn-large">
-          <span>Let's Connect</span>
-          <i class="fas fa-arrow-right"></i>
-        </a>
       </div>
     </div>
   </section>

@@ -15,9 +15,9 @@
 
   let W, H, particles, animFrame;
 
-  const PARTICLE_COUNT = 70;
-  const CYAN  = '0, 217, 255';
-  const BLUE  = '59, 130, 246';
+  const PARTICLE_COUNT = 36;
+  const ACCENT = '244, 244, 245';
+  const MUTED  = '113, 113, 122';
 
   function resize() {
     W = canvas.width  = window.innerWidth;
@@ -28,11 +28,11 @@
     return {
       x:  Math.random() * W,
       y:  Math.random() * H,
-      r:  Math.random() * 1.6 + 0.4,
-      vx: (Math.random() - 0.5) * 0.35,
-      vy: (Math.random() - 0.5) * 0.35,
-      a:  Math.random() * 0.5 + 0.15,
-      c:  Math.random() > 0.5 ? CYAN : BLUE,
+      r:  Math.random() * 1.2 + 0.35,
+      vx: (Math.random() - 0.5) * 0.22,
+      vy: (Math.random() - 0.5) * 0.22,
+      a:  Math.random() * 0.22 + 0.08,
+      c:  Math.random() > 0.45 ? ACCENT : MUTED,
     };
   }
 
@@ -47,9 +47,9 @@
         const dx = particles[i].x - particles[j].x;
         const dy = particles[i].y - particles[j].y;
         const dist = Math.sqrt(dx * dx + dy * dy);
-        if (dist < 120) {
-          const alpha = (1 - dist / 120) * 0.15;
-          ctx.strokeStyle = `rgba(${CYAN}, ${alpha})`;
+        if (dist < 105) {
+          const alpha = (1 - dist / 105) * 0.08;
+          ctx.strokeStyle = `rgba(${ACCENT}, ${alpha})`;
           ctx.lineWidth = 0.5;
           ctx.beginPath();
           ctx.moveTo(particles[i].x, particles[i].y);
@@ -156,10 +156,10 @@
   if (!el) return;
 
   const phrases = [
-    'AI/ML Engineer',
-    'Cloud DevOps Engineer',
-    'SaaS Builder and Entrepreneur',
-    'Generative AI and Tools',
+    'SRE / Systems Engineer',
+    'Cloud Infrastructure Engineer',
+    'Production Reliability Engineer',
+    'DevOps and Platform Automation',
   ];
 
   let phraseIdx = 0;
@@ -318,9 +318,9 @@
       const dx = (x - cx) / cx;
       const dy = (y - cy) / cy;
       card.style.transform = `
-        translateY(-6px)
-        rotateX(${-dy * 4}deg)
-        rotateY(${dx  * 4}deg)
+      translateY(-3px)
+      rotateX(${-dy * 2}deg)
+      rotateY(${dx  * 2}deg)
       `;
     });
     card.addEventListener('mouseleave', () => {
@@ -336,7 +336,7 @@
 (function initBadgeHover() {
   document.querySelectorAll('.badge').forEach(badge => {
     badge.addEventListener('mouseenter', function() {
-      this.style.boxShadow = '0 0 12px currentColor';
+      this.style.boxShadow = '0 0 10px rgba(244, 244, 245, 0.12)';
     });
     badge.addEventListener('mouseleave', function() {
       this.style.boxShadow = '';
@@ -346,39 +346,43 @@
 
 
 /* ===========================
-   NAV LOGO EASTER EGG
+   HERO AVATAR TOOLTIP POSITION
    =========================== */
-(function initLogoEasterEgg() {
-  const logo = document.querySelector('.nav-logo');
-  if (!logo) return;
-  let clicks = 0;
-  logo.addEventListener('click', (e) => {
-    e.preventDefault();
-    clicks++;
-    if (clicks === 5) {
-      clicks = 0;
-      document.body.style.animation = 'none';
-      logo.style.color = `hsl(${Math.random()*360}, 100%, 70%)`;
-      setTimeout(() => logo.style.color = '', 1000);
-    }
-  });
+(function initHeroAvatarTooltip() {
+  const avatar = document.querySelector('.hero-symbol');
+  if (!avatar) return;
+
+  avatar.addEventListener('pointermove', (event) => {
+    const rect = avatar.getBoundingClientRect();
+    const x = ((event.clientX - rect.left) / rect.width) * 100;
+    const y = ((event.clientY - rect.top) / rect.height) * 100;
+    avatar.style.setProperty('--tip-x', `${Math.max(6, Math.min(88, x))}%`);
+    avatar.style.setProperty('--tip-y', `${Math.max(12, Math.min(88, y))}%`);
+  }, { passive: true });
 })();
 
 
 /* ===========================
-   OPEN TO WORK BADGE TOOLTIP
+   MOUSE-REACTIVE SPOTLIGHT
    =========================== */
-(function initBadgeClick() {
-  const badge = document.getElementById('open-to-work-badge');
-  if (!badge) return;
-  badge.style.cursor = 'pointer';
-  badge.title = 'Currently open to full-time, internship & freelance opportunities!';
-  badge.addEventListener('click', () => {
-    const contact = document.getElementById('contact');
-    if (contact) {
-      const navH = 70;
-      const top = contact.getBoundingClientRect().top + window.scrollY - navH;
-      window.scrollTo({ top, behavior: 'smooth' });
-    }
-  });
+(function initMouseSpotlight() {
+  let targetX = 50;
+  let targetY = 50;
+  let currentX = 50;
+  let currentY = 50;
+
+  function updateVars() {
+    currentX += (targetX - currentX) * 0.12;
+    currentY += (targetY - currentY) * 0.12;
+    document.documentElement.style.setProperty('--mouse-x', `${currentX}%`);
+    document.documentElement.style.setProperty('--mouse-y', `${currentY}%`);
+    requestAnimationFrame(updateVars);
+  }
+
+  window.addEventListener('pointermove', (event) => {
+    targetX = (event.clientX / window.innerWidth) * 100;
+    targetY = (event.clientY / window.innerHeight) * 100;
+  }, { passive: true });
+
+  updateVars();
 })();
