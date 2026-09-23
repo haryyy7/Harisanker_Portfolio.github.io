@@ -5,654 +5,590 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
-    content="Harisanker A — SRE, Systems Engineer, and Cloud/Infrastructure Engineer based in Alappuzha, Kerala. View projects, skills, and contact info." />
+    content="Harisanker A — Cloud | DevOps | Infrastructure Engineer. A driven infrastructure enthusiast actively designing and deploying reliable, cloud-native solutions." />
   <meta name="keywords"
-    content="Harisanker, portfolio, SRE, systems engineer, infrastructure engineer, DevOps, cloud, Kerala, India" />
+    content="Harisanker, Cloud Engineer, DevOps Engineer, Infrastructure Engineer, AWS, Terraform, Docker, ECS, CI/CD, Linux, Kerala, India" />
   <meta name="author" content="Harisanker A" />
-  <meta property="og:title" content="Harisanker A — Developer Portfolio" />
-  <meta property="og:description" content="SRE | Systems Engineer | Cloud & Infrastructure Engineer" />
+  <meta property="og:title" content="Harisanker A — Cloud | DevOps | Infrastructure Engineer" />
+  <meta property="og:description"
+    content="A driven infrastructure enthusiast actively designing and deploying reliable, cloud-native solutions." />
   <meta property="og:type" content="website" />
-  <title>Harisanker A — Developer Portfolio</title>
+  <title>Harisanker A — Cloud &amp; Infrastructure Engineer</title>
 
-  <!-- Google Fonts -->
+  <!-- Google Fonts: Space Grotesk, Inter, JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Inter:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800;900&display=swap"
     rel="stylesheet" />
 
-  <!-- Icons -->
+  <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
+  <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
 
-  <!-- ========== CANVAS BACKGROUND ========== -->
+  <!-- ========== PRELOADER (Multilingual Greetings Animation) ========== -->
+  <div id="preloader" class="preloader">
+    <div class="preloader-content">
+      <div class="preloader-dot"></div>
+      <h2 id="preloader-text" class="preloader-text">Hello</h2>
+    </div>
+  </div>
+
+  <!-- ========== SUBTLE BACKGROUND PARTICLES ========== -->
   <canvas id="particles-canvas"></canvas>
 
-  <!-- ========== NAV ========== -->
-  <nav id="navbar">
-    <div class="nav-container">
-      <a href="#hero" class="nav-logo portfolio-brand" aria-label="Harisanker portfolio home">
-        <span class="brand-mark" aria-hidden="true">
-          <span></span>
-        </span>
-        <span>HARI. PORTFOLIO/2026</span>
+  <!-- ========== NAVBAR ========== -->
+  <header id="header">
+    <nav id="navbar" class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Harisanker Portfolio">
+        <span class="logo-code">&lt;</span><span class="logo-text">hari.dev</span><span class="logo-code">/&gt;</span>
       </a>
-      <ul class="nav-links" id="nav-links"></ul>
-      <div class="nav-right">
-        <a href="Harisanker_A_Resume.pdf" download="Harisanker_A_resume.pdf" class="nav-link nav-resume-link" id="nav-resume-btn">
-          Resume
-        </a>
-        <a href="https://www.linkedin.com/in/harisankera/" target="_blank" rel="noopener" class="nav-link">
-          LinkedIn
-        </a>
-        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-          <span></span><span></span><span></span>
+
+      <div class="nav-menu" id="nav-menu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
-  <!-- ========== HERO ========== -->
-  <section id="hero">
-    <div class="hero-content">
-      <h1 class="hero-name">
-        <span>Harisanker</span>
-        <span>A</span>
-      </h1>
+  <main>
+    <!-- ========== HERO SECTION ========== -->
+    <section id="hero" class="hero-section">
+      <div class="hero-container">
 
-      <a
-        class="hero-symbol"
-        href="https://wa.me/917907988948?text=Hi%20Hari.%20I%20noticed%20your%20profile%20and%20saw%20you%20are%20open%20to%20new%20opportunities!%20Do%20you%20have%2010%20minutes%20for%20a%20quick%20chat%20this%20week%3F%20Let%20me%20know%20what%20time%20works%20best%20for%20you."
-        target="_blank"
-        rel="noopener"
-        aria-label="DM on WhatsApp to connect"
-        data-tooltip="DM on whatsapp to connect"
-      >
-        <span class="avatar-hair"></span>
-        <span class="avatar-face"></span>
-        <span class="avatar-ear avatar-ear-left"></span>
-        <span class="avatar-ear avatar-ear-right"></span>
-        <span class="avatar-eyes"></span>
-        <span class="avatar-mouth"></span>
-        <span class="avatar-body"></span>
-      </a>
-
-      <p class="hero-role-strip">Cloud Engineer . DevOps Engineer . Systems Admin</p>
-
-      <div class="hero-meta">
-        <span>Kerala, India</span>
-        <span>Open to relocation</span>
-        <span>Hybrid modes</span>
-      </div>
-    </div>
-
-  </section>
-
-  <!-- ========== ABOUT ========== -->
-  <section id="about" class="section">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">// about_me</span>
-        <h2 class="section-title">About Me</h2>
-      </div>
-      <div class="about-grid">
-        <div class="about-avatar-wrap reveal">
-          <div class="about-avatar">
-            <div class="avatar-ring"></div>
-            <div class="avatar-inner">
-              <span class="avatar-initials">HA</span>
-            </div>
-            <div class="avatar-glow"></div>
+        <!-- Certification Badges Row (Prominent, Non-clickable, No hover animation) -->
+        <div class="hero-badges-strip reveal">
+          <div class="badge-item" title="AWS Certified AI Practitioner">
+            <img src="assets/images/badge-aws-ai-practitioner.png" alt="AWS Certified AI Practitioner Badge" class="badge-icon" />
           </div>
-          <div class="about-stats">
-            <div class="stat-card reveal">
-              <span class="stat-number">3+</span>
-              <span class="stat-label">Projects Shipped</span>
-            </div>
-            <div class="stat-card reveal">
-              <span class="stat-number">5+</span>
-              <span class="stat-label">Technologies</span>
-            </div>
-            <div class="stat-card reveal">
-              <span class="stat-number">∞</span>
-              <span class="stat-label">Curiosity</span>
-            </div>
+          <div class="badge-item" title="AWS Educate Introduction to Generative AI">
+            <img src="assets/images/badge-aws-genai.png" alt="AWS Educate Gen AI Badge" class="badge-icon" />
+          </div>
+          <div class="badge-item" title="AWS Academy Graduate - Machine Learning Foundations">
+            <img src="assets/images/badge-aws-ml.png" alt="AWS Academy ML Foundations Badge" class="badge-icon" />
+          </div>
+          <div class="badge-item" title="IBM Data Science Orientation">
+            <img src="assets/images/badge-ibm-datascience.png" alt="IBM Data Science Badge" class="badge-icon" />
           </div>
         </div>
-        <div class="about-text reveal">
-          <p>
-            I’m a <strong>Computer Science engineering graduate</strong> focused on <strong>cloud infrastructure,
-              Linux systems, DevOps, and reliability engineering</strong>. During college I was more interested in the
-            development side of software, but over time I found the infrastructure side more interesting because it
-            connects software, systems, security, and real operations.
+
+        <!-- Name Section -->
+        <div class="hero-name-wrap reveal">
+          <p class="hero-hello">Hello, I'm</p>
+          <h1 class="hero-name">
+            <span class="name-gradient">Harisanker</span>
+          </h1>
+        </div>
+
+        <!-- Role line: between name & one-statement line, font size in between -->
+        <div class="hero-role-wrap reveal">
+          <p class="hero-role">Cloud &nbsp;|&nbsp; DevOps &nbsp;|&nbsp; Infrastructure Engineer</p>
+        </div>
+
+        <!-- One-statement line -->
+        <p class="hero-tagline reveal">
+          A driven infrastructure enthusiast actively designing and deploying reliable, cloud-native solutions.
+        </p>
+
+        <!-- Location -->
+        <div class="hero-location reveal">
+          <span class="location-badge">
+            <i class="fas fa-map-marker-alt"></i> Kerala, India
+          </span>
+        </div>
+
+        <!-- 3D Graphic (Spline computer.love VHS-style artwork, just above About section) -->
+        <div class="hero-graphic-wrap reveal">
+          <div class="hero-graphic-card">
+            <img src="assets/images/computer-love.webp" alt="computer.love - 3D Illustration" class="hero-graphic-img" />
+            <div class="graphic-glow"></div>
+          </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+          <div class="scroll-mouse">
+            <div class="scroll-wheel"></div>
+          </div>
+          <span>Scroll down</span>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section id="about" class="section">
+      <div class="container">
+        
+        <!-- Stats Row (placed just above About text) -->
+        <div class="about-stats-strip reveal">
+          <div class="stat-box">
+            <div class="stat-number-wrap">
+              <span class="stat-val">3+</span>
+            </div>
+            <span class="stat-text">Projects Shipped</span>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number-wrap">
+              <span class="stat-val">5+</span>
+            </div>
+            <span class="stat-text">Technologies</span>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number-wrap">
+              <span class="stat-val">∞</span>
+            </div>
+            <span class="stat-text">Curiosity</span>
+          </div>
+        </div>
+
+        <div class="section-header reveal">
+          <span class="section-tag">// about_me</span>
+          <h2 class="section-title">About Me</h2>
+        </div>
+
+        <div class="about-content-card reveal">
+          <div class="about-card-glow"></div>
+          <p class="about-paragraph">
+            I'm <strong>Harisanker</strong>, a Cloud Infrastructure and DevOps engineer based in Alappuzha, Kerala. I'm currently interning in <strong>AWS Cloud &amp; DevOps</strong>, working hands-on with infrastructure automation, CI/CD, and containerized deployments. I like building things end to end — from AI/ML to full-stack products — and turning <em>"it works on my machine"</em> into something that actually holds up in production.
           </p>
-          <p>
-            My core skills include <strong>Linux, Docker, Bash, CI/CD pipelines, GitHub Actions, Jenkins, networking
-              fundamentals, and production troubleshooting</strong>. I enjoy turning rough ideas into reliable
-            deployments with clean, maintainable automation. I’m also interested in financial markets and business
-            models, which helps me think about technology as a practical lever for real-world outcomes.
-          </p>
-          <p>
-            I’m aspiring to set up home labs, self-host useful paid services, and deploy tools that solve day-to-day
-            needs and pain points without depending on third parties where possible. The goal is to understand systems
-            deeply, own the full stack of operations, and keep security as a first-class priority.
-          </p>
-          <div class="about-tags">
-            <span class="tag">SRE / PRE</span>
-            <span class="tag">Systems Engineer</span>
-            <span class="tag">☁️ Cloud &amp; DevOps</span>
-            <span class="tag">Linux &amp; Networking</span>
-            <span class="tag">Kubernetes</span>
-            <span class="tag">📈 Trading</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ========== SKILLS ========== -->
-  <section id="skills" class="section section-alt">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">// skill_set</span>
-        <h2 class="section-title">Skills & Technologies</h2>
-      </div>
-
-      <div class="skills-grid">
-        <!-- Cloud & DevOps -->
-        <div class="skill-category reveal">
-          <div class="skill-category-header">
-            <i class="fas fa-cloud skill-icon devops-icon"></i>
-            <h3>Cloud &amp; DevOps</h3>
-          </div>
-          <div class="skill-badges">
-            <span class="badge badge-devops">Docker</span>
-            <span class="badge badge-devops">Kubernetes</span>
-            <span class="badge badge-devops">Linux</span>
-            <span class="badge badge-devops">Bash Scripting</span>
-            <span class="badge badge-devops">CI/CD Pipelines</span>
-            <span class="badge badge-devops">GitHub Actions</span>
-            <span class="badge badge-devops">Jenkins</span>
-            <span class="badge badge-devops">Networking Basics</span>
-            <span class="badge badge-devops">IT Operations</span>
-            <span class="badge badge-devops">KodeKloud Labs</span>
-          </div>
-        </div>
-
-        <!-- Generative AI & Tools -->
-        <div class="skill-category reveal">
-          <div class="skill-category-header">
-            <i class="fas fa-tools skill-icon tools-icon"></i>
-            <h3>Generative AI &amp; Tools</h3>
-          </div>
-          <div class="skill-badges">
-            <span class="badge badge-tools">Git</span>
-            <span class="badge badge-tools">GitHub</span>
-            <span class="badge badge-tools">VSCode</span>
-            <span class="badge badge-tools">Google Colab</span>
-            <span class="badge badge-tools">Kaggle Notebooks</span>
-            <span class="badge badge-tools">AI Coding Tools</span>
-            <span class="badge badge-tools">Vercel</span>
-            <span class="badge badge-tools">Supabase</span>
-            <span class="badge badge-tools">OpenClaw</span>
-            <span class="badge badge-tools">Pinecone</span>
-            <span class="badge badge-tools">Claude Code</span>
-            <span class="badge badge-tools">Cursor</span>
-          </div>
-        </div>
-
-        <!-- Other -->
-        <div class="skill-category reveal">
-          <div class="skill-category-header">
-            <i class="fas fa-star skill-icon other-icon"></i>
-            <h3>Other Skills</h3>
-          </div>
-          <div class="skill-badges">
-            <span class="badge badge-other">Technical Analysis</span>
-            <span class="badge badge-other">Intraday Trading</span>
-            <span class="badge badge-other">Algo Trading</span>
-            <span class="badge badge-other">SaaS Product Design</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== PROJECTS ========== -->
-  <section id="projects" class="section">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">// projects</span>
-        <h2 class="section-title">Featured Projects</h2>
-      </div>
-
-      <div class="projects-grid">
-
-        <!-- Project 1 -->
-        <div class="project-card reveal" id="project-brain-tumor">
-          <div class="project-card-glow"></div>
-          <div class="project-header">
-            <div class="project-icon-wrap">
-              <i class="fas fa-brain"></i>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/haryyy7/brain-tumor-detection-hybrid-vit-cnn" target="_blank" rel="noopener"
-                title="GitHub" class="project-link-btn">
-                <i class="fab fa-github"></i>
-              </a>
-              <a href="https://huggingface.co/spaces/haryyyy/Hybrid_VIT-CNN_BrainTumorClassifier" target="_blank"
-                rel="noopener" title="Live Demo" class="project-link-btn project-demo-btn">
-                <i class="fas fa-external-link-alt"></i>
-              </a>
-            </div>
-          </div>
-          <div class="project-body">
-            <h3 class="project-title">Brain Tumor Classification</h3>
-            <p class="project-subtitle">Hybrid ViT-CNN Architecture</p>
-            <p class="project-desc">
-              Deep learning model for classifying brain tumors (Glioma detection) using a hybrid Vision Transformer +
-              CNN architecture. Deployed as a Hugging Face Space with a Gradio interface for real-time image-based
-              inference.
-            </p>
-            <div class="project-tags">
-              <span class="ptag ptag-ai">AI/ML</span>
-              <span class="ptag ptag-ai">Computer Vision</span>
-              <span class="ptag ptag-ai">Medical AI</span>
-              <span class="ptag ptag-ai">HuggingFace</span>
-            </div>
-            <div class="project-stack">
-              <span class="stack-item">Python</span>
-              <span class="stack-item">PyTorch</span>
-              <span class="stack-item">ViT</span>
-              <span class="stack-item">CNN</span>
-              <span class="stack-item">Gradio</span>
-              <span class="stack-item">Hugging Face</span>
-              <span class="stack-item">Kaggle</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 2 — WizardPRO -->
-        <div class="project-card reveal" id="project-wizardpro">
-          <div class="project-card-glow glow-green"></div>
-          <div class="project-header">
-            <div class="project-icon-wrap icon-green">
-              <i class="fas fa-chart-line"></i>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/haryyy7/wizard-pro-app-new" target="_blank" rel="noopener" title="GitHub"
-                class="project-link-btn">
-                <i class="fab fa-github"></i>
-              </a>
-              <a href="https://wizard-pro-app-new.vercel.app/" target="_blank" rel="noopener" title="Live Demo"
-                class="project-link-btn project-demo-btn">
-                <i class="fas fa-external-link-alt"></i>
-              </a>
-            </div>
-          </div>
-          <div class="project-body">
-            <h3 class="project-title">WizardPRO</h3>
-            <p class="project-subtitle">Mobile-First Trading Intelligence Platform</p>
-            <p class="project-desc">
-              Your expert analyst on the go — a PWA built for Indian equity traders. Provides a unified experience
-              across five core analytical modules, running entirely in the browser with zero dependencies. Installable
-              on iOS &amp; Android, with print-to-PDF daily reports and dark/light theming.
-            </p>
-            <div class="project-tags">
-              <span class="ptag ptag-ai">Algo Trading</span>
-              <span class="ptag ptag-ai">FinTech</span>
-              <span class="ptag ptag-saas">PWA</span>
-              <span class="ptag ptag-tools">Vanilla JS</span>
-            </div>
-            <div class="project-stack">
-              <span class="stack-item">HTML</span>
-              <span class="stack-item">CSS</span>
-              <span class="stack-item">JavaScript</span>
-              <span class="stack-item">PWA</span>
-              <span class="stack-item">Vercel</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 3 — DropShip India (MVP in Progress) -->
-        <div class="project-card reveal" id="project-dropship">
-          <div class="project-card-glow glow-purple"></div>
-          <div class="project-header">
-            <div class="project-icon-wrap icon-purple">
-              <i class="fas fa-store"></i>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/haryyy7" target="_blank" rel="noopener" title="GitHub"
-                class="project-link-btn">
-                <i class="fab fa-github"></i>
-              </a>
-              <span class="project-wip-badge">MVP in Progress</span>
-            </div>
-          </div>
-          <div class="project-body">
-            <h3 class="project-title">DropShip India</h3>
-            <p class="project-subtitle">AI-Powered Dropshipping SaaS</p>
-            <p class="project-desc">
-              Full-stack SaaS platform for Indian dropshippers — combining AI product spy tools, ML-based RTO risk
-              prediction for tier 2/3/4 cities, Shopify integration, logistics API integrations (Delhivery, Shiprocket),
-              and a Premium Portfolio of 40 hand-curated products/week.
-            </p>
-            <div class="project-tags">
-              <span class="ptag ptag-saas">SaaS</span>
-              <span class="ptag ptag-saas">Full-Stack</span>
-              <span class="ptag ptag-saas">AI</span>
-              <span class="ptag ptag-saas">Automation</span>
-              <span class="ptag ptag-saas">Entrepreneurship</span>
-            </div>
-            <div class="project-stack">
-              <span class="stack-item">MERN Stack</span>
-              <span class="stack-item">Python</span>
-              <span class="stack-item">Docker</span>
-              <span class="stack-item">Supabase</span>
-              <span class="stack-item">Vercel</span>
-            </div>
+          <div class="about-pills">
+            <span class="about-pill"><i class="fas fa-server"></i> Cloud &amp; Infrastructure</span>
+            <span class="about-pill"><i class="fas fa-infinity"></i> DevOps &amp; CI/CD</span>
+            <span class="about-pill"><i class="fab fa-linux"></i> Linux &amp; Networking</span>
+            <span class="about-pill"><i class="fas fa-cubes"></i> Containers &amp; Terraform</span>
+            <span class="about-pill"><i class="fas fa-shield-alt"></i> SRE &amp; Reliability</span>
+            <span class="about-pill"><i class="fas fa-chart-line"></i> Trading &amp; Analytics</span>
           </div>
         </div>
 
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ========== EDUCATION ========== -->
-  <section id="education" class="section section-alt">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">// education</span>
-        <h2 class="section-title">Education & Learning</h2>
-      </div>
+    <!-- ========== SKILLS & TECHNOLOGIES ========== -->
+    <section id="skills" class="section section-darker">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// capabilities</span>
+          <h2 class="section-title">Skills &amp; Technologies</h2>
+          <p class="section-subtitle">Core toolset for deploying, automating, and operating modern cloud systems.</p>
+        </div>
 
-      <div class="education-timeline">
+        <div class="skills-grid">
 
-
-
-        <div class="edu-card reveal" id="edu-btech">
-          <div class="edu-icon-col">
-            <div class="edu-icon">
-              <i class="fas fa-graduation-cap"></i>
-            </div>
-            <div class="edu-line"></div>
-          </div>
-          <div class="edu-content">
-            <div class="edu-header">
-              <div>
-                <h3 class="edu-degree">B.Tech in Computer Science & Engineering</h3>
-                <p class="edu-institution">SRM Institute of Science and Technology, Chennai, India</p>
+          <!-- Cloud & DevOps Category (Uniform clean texture across all badges) -->
+          <div class="skill-card skill-card-featured reveal">
+            <div class="skill-card-glow"></div>
+            <div class="skill-header">
+              <div class="skill-icon-box">
+                <i class="fas fa-cloud"></i>
               </div>
-              <span class="edu-badge">Graduate</span>
-            </div>
-            <p class="edu-desc">Relevant coursework: Data Structures, Algorithms, Operating Systems, Machine Learning,
-              Cloud Computing</p>
-            <div class="edu-courses">
-              <span class="course-tag">Data Structures</span>
-              <span class="course-tag">Algorithms</span>
-              <span class="course-tag">Operating Systems</span>
-              <span class="course-tag">Machine Learning</span>
-              <span class="course-tag">Cloud Computing</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="edu-card reveal" id="edu-kodekloud">
-          <div class="edu-icon-col">
-            <div class="edu-icon edu-icon-devops">
-              <i class="fas fa-cloud"></i>
-            </div>
-          </div>
-          <div class="edu-content">
-            <div class="edu-header">
               <div>
-                <h3 class="edu-degree">KodeKloud — Cloud & DevOps Learning Path</h3>
-                <p class="edu-institution">Online Platform</p>
+                <h3 class="skill-group-title">Cloud &amp; DevOps</h3>
+                <span class="skill-group-sub">Infrastructure, Automation &amp; Containers</span>
               </div>
-              <span class="edu-badge edu-badge-progress">In Progress · 2026</span>
             </div>
-            <p class="edu-desc">Hands-on certified labs covering Docker, Kubernetes, CI/CD pipelines, Linux
-              administration, and Networking essentials.</p>
-            <div class="edu-courses">
-              <span class="course-tag">Docker</span>
-              <span class="course-tag">Kubernetes</span>
-              <span class="course-tag">CI/CD</span>
-              <span class="course-tag">Linux</span>
-              <span class="course-tag">Networking</span>
+            <div class="skill-badges-container">
+              <span class="skill-badge">AWS</span>
+              <span class="skill-badge">EC2</span>
+              <span class="skill-badge">VPC</span>
+              <span class="skill-badge">IAM</span>
+              <span class="skill-badge">Terraform</span>
+              <span class="skill-badge">Infrastructure as Code</span>
+              <span class="skill-badge">Docker</span>
+              <span class="skill-badge">Docker Compose</span>
+              <span class="skill-badge">Kubernetes</span>
+              <span class="skill-badge">CI/CD</span>
+              <span class="skill-badge">GitHub Actions</span>
+              <span class="skill-badge">Jenkins</span>
+              <span class="skill-badge">Linux</span>
+              <span class="skill-badge">Bash</span>
+              <span class="skill-badge">Python</span>
+              <span class="skill-badge">CloudWatch</span>
+              <span class="skill-badge">Monitoring</span>
+              <span class="skill-badge">Auto Scaling</span>
+              <span class="skill-badge">Load Balancer</span>
+              <span class="skill-badge">Cloud Security</span>
+              <span class="skill-badge">Networking Basics</span>
+              <span class="skill-badge">IT Operations</span>
+              <span class="skill-badge">KodeKloud Labs</span>
             </div>
           </div>
-        </div>
 
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ========== CERTIFICATIONS ========== -->
-  <section id="certifications" class="section">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">// certifications</span>
-        <h2 class="section-title">Licenses &amp; Certifications</h2>
-      </div>
-
-      <div class="education-timeline">
-
-        <!-- Cert 1 -->
-        <div class="edu-card reveal">
-          <div class="edu-icon-col">
-            <div class="edu-icon">
-              <i class="fab fa-aws"></i>
-            </div>
-            <div class="edu-line"></div>
-          </div>
-          <div class="edu-content">
-            <div class="edu-header">
+          <!-- Generative AI & Tools -->
+          <div class="skill-card reveal">
+            <div class="skill-card-glow"></div>
+            <div class="skill-header">
+              <div class="skill-icon-box">
+                <i class="fas fa-bolt"></i>
+              </div>
               <div>
-                <h3 class="edu-degree">AWS Educate Introduction to Generative AI</h3>
-                <p class="edu-institution">Amazon Web Services (AWS)</p>
+                <h3 class="skill-group-title">Generative AI &amp; Tools</h3>
+                <span class="skill-group-sub">Developer Workflow &amp; AI Integration</span>
               </div>
-              <span class="edu-badge">Sep 2025</span>
             </div>
-            <p class="edu-desc">Credential ID: 58c27557-698a-47e2-8065-4d97908cc364</p>
+            <div class="skill-badges-container">
+              <span class="skill-badge">Git</span>
+              <span class="skill-badge">GitHub</span>
+              <span class="skill-badge">VSCode</span>
+              <span class="skill-badge">Cursor</span>
+              <span class="skill-badge">Claude Code</span>
+              <span class="skill-badge">AI Coding Tools</span>
+              <span class="skill-badge">Google Colab</span>
+              <span class="skill-badge">Kaggle Notebooks</span>
+              <span class="skill-badge">Vercel</span>
+              <span class="skill-badge">Supabase</span>
+              <span class="skill-badge">Pinecone</span>
+              <span class="skill-badge">OpenClaw</span>
+            </div>
           </div>
-        </div>
 
-        <!-- Cert 2 -->
-        <div class="edu-card reveal">
-          <div class="edu-icon-col">
-            <div class="edu-icon">
-              <i class="fab fa-aws"></i>
-            </div>
-            <div class="edu-line"></div>
-          </div>
-          <div class="edu-content">
-            <div class="edu-header">
+          <!-- Other Skills -->
+          <div class="skill-card reveal">
+            <div class="skill-card-glow"></div>
+            <div class="skill-header">
+              <div class="skill-icon-box">
+                <i class="fas fa-layer-group"></i>
+              </div>
               <div>
-                <h3 class="edu-degree">AWS Certified AI Practitioner</h3>
-                <p class="edu-institution">Amazon Web Services (AWS)</p>
+                <h3 class="skill-group-title">Other Skills</h3>
+                <span class="skill-group-sub">Analytical &amp; Product Engineering</span>
               </div>
-              <span class="edu-badge">Sep 2025</span>
             </div>
-            <p class="edu-desc">Credential ID: 30167572-eb48-41d5-a68c-d9060d2d45a5<br>Expires Sep 2028</p>
+            <div class="skill-badges-container">
+              <span class="skill-badge">Technical Analysis</span>
+              <span class="skill-badge">Intraday Trading</span>
+              <span class="skill-badge">Algo Trading</span>
+              <span class="skill-badge">SaaS Product Design</span>
+              <span class="skill-badge">Systems Troubleshooting</span>
+              <span class="skill-badge">Clean Code</span>
+            </div>
           </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FEATURED PROJECTS ========== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// portfolio</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Real-world infrastructure deployments, cloud engineering, and full-stack solutions.</p>
         </div>
 
-        <!-- Cert 3 -->
-        <div class="edu-card reveal">
-          <div class="edu-icon-col">
-            <div class="edu-icon" style="color: #0f62fe;">
-              <i class="fas fa-desktop"></i>
-            </div>
-            <div class="edu-line"></div>
-          </div>
-          <div class="edu-content">
-            <div class="edu-header">
-              <div>
-                <h3 class="edu-degree">IBM Data Science Orientation</h3>
-                <p class="edu-institution">IBM</p>
+        <div class="projects-list">
+
+          <!-- Project 1: AWS Cloud Infrastructure & CI/CD Project (TOP OF LIST - NO GITHUB LINK AS REQUESTED) -->
+          <article class="project-featured-card reveal">
+            <div class="project-glow"></div>
+            <div class="project-inner">
+              <div class="project-top-meta">
+                <div class="project-badge-featured">
+                  <i class="fas fa-star"></i> Featured Cloud Infrastructure
+                </div>
+                <div class="project-type-tag">AWS &amp; DevOps</div>
               </div>
-              <span class="edu-badge">Nov 2023</span>
-            </div>
-            <p class="edu-desc">Credential ID: 792be975-a55d-47e1-a1ee-6105cccb0943</p>
-          </div>
-        </div>
 
-        <!-- Cert 4 -->
-        <div class="edu-card reveal">
-          <div class="edu-icon-col">
-            <div class="edu-icon">
-              <i class="fab fa-aws"></i>
-            </div>
-          </div>
-          <div class="edu-content">
-            <div class="edu-header">
-              <div>
-                <h3 class="edu-degree">AWS Academy Graduate - Machine Learning Foundations</h3>
-                <p class="edu-institution">Amazon Web Services (AWS)</p>
+              <h3 class="project-name">AWS Cloud Infrastructure &amp; CI/CD Project</h3>
+              <p class="project-summary">Multi-Tier Automated Production Architecture</p>
+
+              <p class="project-description">
+                Provisioned a multi-tier AWS architecture with Terraform, including VPC, multi-AZ networking, NAT Gateway, security groups, ECS Fargate, ALB, ECR, RDS PostgreSQL and Redis. Containerized and deployed a multi-service voting application and implemented GitHub Actions CI/CD for automated Docker image builds and ECS deployments, following private-subnet and least-privilege security practices.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">AWS</span>
+                <span class="tech-pill">Terraform</span>
+                <span class="tech-pill">Docker</span>
+                <span class="tech-pill">ECS Fargate</span>
+                <span class="tech-pill">ECR</span>
+                <span class="tech-pill">ALB</span>
+                <span class="tech-pill">RDS PostgreSQL</span>
+                <span class="tech-pill">Redis</span>
+                <span class="tech-pill">GitHub Actions</span>
+                <span class="tech-pill">IAM</span>
+                <span class="tech-pill">VPC</span>
+                <span class="tech-pill">Linux</span>
               </div>
-              <span class="edu-badge">Apr 2023</span>
             </div>
-            <p class="edu-desc">Credential ID: 70bb33f1-1c2c-41d2-9407-a0fd2f2fd702</p>
+          </article>
+
+          <!-- Project 2: Brain Tumor Classification -->
+          <article class="project-featured-card reveal">
+            <div class="project-glow"></div>
+            <div class="project-inner">
+              <div class="project-top-meta">
+                <div class="project-type-tag">Deep Learning / AI</div>
+                <div class="project-action-links">
+                  <a href="https://github.com/haryyy7/brain-tumor-detection-hybrid-vit-cnn" target="_blank" rel="noopener" class="proj-icon-btn" title="GitHub Repository">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://huggingface.co/spaces/haryyyy/Hybrid_VIT-CNN_BrainTumorClassifier" target="_blank" rel="noopener" class="proj-icon-btn" title="Live Hugging Face Space">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+
+              <h3 class="project-name">Brain Tumor Classification</h3>
+              <p class="project-summary">Hybrid ViT-CNN Medical Imaging Architecture</p>
+
+              <p class="project-description">
+                Deep learning model for classifying brain tumors (Glioma detection) using a hybrid Vision Transformer + CNN architecture. Deployed as a Hugging Face Space with a Gradio interface for real-time image-based inference.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">PyTorch</span>
+                <span class="tech-pill">ViT</span>
+                <span class="tech-pill">CNN</span>
+                <span class="tech-pill">Gradio</span>
+                <span class="tech-pill">Hugging Face</span>
+                <span class="tech-pill">Kaggle</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: WizardPRO -->
+          <article class="project-featured-card reveal">
+            <div class="project-glow"></div>
+            <div class="project-inner">
+              <div class="project-top-meta">
+                <div class="project-type-tag">FinTech / PWA</div>
+                <div class="project-action-links">
+                  <a href="https://github.com/haryyy7/wizard-pro-app-new" target="_blank" rel="noopener" class="proj-icon-btn" title="GitHub Repository">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://wizard-pro-app-new.vercel.app/" target="_blank" rel="noopener" class="proj-icon-btn" title="Live Web App">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+
+              <h3 class="project-name">WizardPRO</h3>
+              <p class="project-summary">Mobile-First Trading Intelligence Platform</p>
+
+              <p class="project-description">
+                Your expert analyst on the go — a PWA built for Indian equity traders. Provides a unified experience across five core analytical modules, running entirely in the browser with zero dependencies. Installable on iOS &amp; Android, with print-to-PDF daily reports and dark/light theming.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">HTML5</span>
+                <span class="tech-pill">CSS3</span>
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">PWA</span>
+                <span class="tech-pill">Vercel</span>
+                <span class="tech-pill">Financial Data</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: DropShip India -->
+          <article class="project-featured-card reveal">
+            <div class="project-glow"></div>
+            <div class="project-inner">
+              <div class="project-top-meta">
+                <div class="project-type-tag">SaaS / Full-Stack</div>
+                <div class="project-action-links">
+                  <a href="https://github.com/haryyy7" target="_blank" rel="noopener" class="proj-icon-btn" title="GitHub Profile">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <span class="wip-pill">MVP in Progress</span>
+                </div>
+              </div>
+
+              <h3 class="project-name">DropShip India</h3>
+              <p class="project-summary">AI-Powered Dropshipping Intelligence SaaS</p>
+
+              <p class="project-description">
+                Full-stack SaaS platform for Indian dropshippers — combining AI product spy tools, ML-based RTO risk prediction for tier 2/3/4 cities, Shopify integration, logistics API integrations (Delhivery, Shiprocket), and a Premium Portfolio of 40 hand-curated products/week.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">MERN Stack</span>
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Docker</span>
+                <span class="tech-pill">Supabase</span>
+                <span class="tech-pill">Vercel</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== EDUCATION & EXPERIENCE ========== -->
+    <section id="education" class="section section-darker">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// journey</span>
+          <h2 class="section-title">Education &amp; Experience</h2>
+          <p class="section-subtitle">Academic foundations, professional internship, and structured cloud certifications.</p>
+        </div>
+
+        <div class="timeline-wrapper">
+
+          <!-- Entry 1: B.Tech -->
+          <div class="timeline-item reveal">
+            <div class="timeline-indicator">
+              <div class="timeline-dot"><i class="fas fa-graduation-cap"></i></div>
+              <div class="timeline-line"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-top">
+                <div>
+                  <h3 class="timeline-title">B.Tech in Computer Science &amp; Engineering</h3>
+                  <p class="timeline-org">SRM Institute of Science and Technology, Chennai, India</p>
+                </div>
+                <span class="timeline-status-badge">Graduate</span>
+              </div>
+              <p class="timeline-desc">Relevant coursework: Data Structures, Algorithms, Operating Systems, Machine Learning, Cloud Computing.</p>
+              <div class="timeline-tags">
+                <span class="timeline-tag">Data Structures</span>
+                <span class="timeline-tag">Algorithms</span>
+                <span class="timeline-tag">Operating Systems</span>
+                <span class="timeline-tag">Machine Learning</span>
+                <span class="timeline-tag">Cloud Computing</span>
+              </div>
+            </div>
           </div>
+
+          <!-- Entry 2: Cloud Intern at F9 Infotech -->
+          <div class="timeline-item timeline-featured reveal">
+            <div class="timeline-indicator">
+              <div class="timeline-dot dot-active"><i class="fas fa-briefcase"></i></div>
+              <div class="timeline-line"></div>
+            </div>
+            <div class="timeline-card card-featured">
+              <div class="timeline-top">
+                <div>
+                  <h3 class="timeline-title">Cloud Intern</h3>
+                  <p class="timeline-org">F9 Infotech · Kochi, Kerala</p>
+                </div>
+                <span class="timeline-status-badge badge-active">Current · 2026</span>
+              </div>
+              <p class="timeline-subheading">Relevant Coursework — F9 Infotech Internship</p>
+              <div class="coursework-grid">
+                <span class="cw-badge">Cloud Computing &amp; AWS</span>
+                <span class="cw-badge">Linux Administration</span>
+                <span class="cw-badge">Docker &amp; Containerization</span>
+                <span class="cw-badge">CI/CD &amp; GitHub Actions</span>
+                <span class="cw-badge">Terraform &amp; Infrastructure as Code</span>
+                <span class="cw-badge">AWS Networking (VPC, Subnets, Security Groups, ALB)</span>
+                <span class="cw-badge">RDS &amp; Database Management</span>
+                <span class="cw-badge">IAM &amp; Cloud Security</span>
+                <span class="cw-badge">Monitoring with CloudWatch</span>
+                <span class="cw-badge">Auto Scaling</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Entry 3: KodeKloud -->
+          <div class="timeline-item reveal">
+            <div class="timeline-indicator">
+              <div class="timeline-dot"><i class="fas fa-terminal"></i></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-top">
+                <div>
+                  <h3 class="timeline-title">KodeKloud — Cloud &amp; DevOps Learning Path</h3>
+                  <p class="timeline-org">Online Platform</p>
+                </div>
+                <span class="timeline-status-badge badge-progress">In Progress · 2026</span>
+              </div>
+              <p class="timeline-desc">Hands-on certified labs covering Docker, Kubernetes, CI/CD pipelines, Linux administration, and Networking essentials.</p>
+              <div class="timeline-tags">
+                <span class="timeline-tag">Docker</span>
+                <span class="timeline-tag">Kubernetes</span>
+                <span class="timeline-tag">CI/CD</span>
+                <span class="timeline-tag">Linux</span>
+                <span class="timeline-tag">Networking</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== GET IN TOUCH SECTION ========== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Interested in working together or discussing cloud &amp; infrastructure opportunities?</p>
+        </div>
+
+        <!-- Medium-sized icons with clean hover tooltips -->
+        <div class="contact-compact-wrapper reveal">
+          <a href="https://wa.me/917907988948?text=Hi%20Hari.%20I%20noticed%20your%20profile%20and%20saw%20you%20are%20open%20to%20new%20opportunities!%20Do%20you%20have%2010%20minutes%20for%20a%20quick%20chat%20this%20week%3F%20Let%20me%20know%20what%20time%20works%20best%20for%20you."
+            target="_blank" rel="noopener" class="contact-icon-bubble bubble-whatsapp" data-tooltip="Connect on WhatsApp" aria-label="Connect on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+
+          <a href="mailto:harisankeranil12@gmail.com?subject=Opportunity%20Discussion%20with%20Harisanker" class="contact-icon-bubble bubble-email" data-tooltip="Connect through Mail" aria-label="Connect through Mail">
+            <i class="fas fa-envelope"></i>
+          </a>
         </div>
 
       </div>
-    </div>
-  </section>
-
-  <!-- ========== LOOKING FOR / CTA ========== -->
-  <section id="looking-for" class="section section-alt">
-    <div class="container">
-      <div class="cta-box reveal">
-        <div class="cta-glow"></div>
-        <span class="section-tag">// opportunities</span>
-        <h2 class="cta-title">What I'm Looking For</h2>
-        <p class="cta-sub">I'm actively seeking full-time opportunities, internships, and collaboration in cloud and infrastructure teams:</p>
-        <div class="opportunity-grid">
-          <div class="opp-card">
-            <i class="fas fa-cloud"></i>
-            <span>Cloud Engineering</span>
-          </div>
-          <div class="opp-card">
-            <i class="fas fa-code-branch"></i>
-            <span>DevOps Engineering</span>
-          </div>
-          <div class="opp-card">
-            <i class="fas fa-server"></i>
-            <span>Site Reliability Engineering</span>
-          </div>
-          <div class="opp-card">
-            <i class="fas fa-network-wired"></i>
-            <span>Platform Reliability Engineering</span>
-          </div>
-          <div class="opp-card">
-            <i class="fas fa-terminal"></i>
-            <span>Linux Admin / IT Operations</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== CONTACT ========== -->
-  <section id="contact" class="section section-alt">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">// contact</span>
-        <h2 class="section-title">Get In Touch</h2>
-        <p class="section-sub">Have an opportunity, a project, or just want to say hello? I'm all ears.</p>
-      </div>
-
-      <div class="contact-grid">
-        <div class="contact-info reveal">
-          <div class="contact-card" id="contact-email">
-            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-            <div>
-              <p class="contact-label">Email</p>
-              <a href="mailto:harisankeranil12@gmail.com" class="contact-value">harisankeranil12@gmail.com</a>
-            </div>
-          </div>
-          <div class="contact-card" id="contact-github">
-            <div class="contact-icon"><i class="fab fa-github"></i></div>
-            <div>
-              <p class="contact-label">GitHub</p>
-              <a href="https://github.com/haryyy7" target="_blank" rel="noopener"
-                class="contact-value">github.com/haryyy7</a>
-            </div>
-          </div>
-          <div class="contact-card" id="contact-linkedin">
-            <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
-            <div>
-              <p class="contact-label">LinkedIn</p>
-              <a href="https://www.linkedin.com/in/harisankera/" target="_blank" rel="noopener"
-                class="contact-value">linkedin.com/in/harisankera</a>
-            </div>
-          </div>
-          <div class="contact-card" id="contact-location">
-            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-            <div>
-              <p class="contact-label">Location</p>
-              <span class="contact-value">Alappuzha, Kerala, India</span>
-            </div>
-          </div>
-        </div>
-
-        <form class="contact-form reveal" id="contact-form" novalidate>
-          <div class="form-group">
-            <label for="contact-name">Name</label>
-            <input type="text" id="contact-name" name="name" placeholder="Your name" required />
-          </div>
-          <div class="form-group">
-            <label for="contact-email-field">Email</label>
-            <input type="email" id="contact-email-field" name="email" placeholder="your@email.com" required />
-          </div>
-          <div class="form-group">
-            <label for="contact-subject">Subject</label>
-            <input type="text" id="contact-subject" name="subject" placeholder="What's this about?" required />
-          </div>
-          <div class="form-group">
-            <label for="contact-message">Message</label>
-            <textarea id="contact-message" name="message" rows="5" placeholder="Tell me more..." required></textarea>
-          </div>
-          <button type="submit" class="btn-primary btn-full" id="contact-submit-btn">
-            <span>Send Message</span>
-            <i class="fas fa-paper-plane"></i>
-          </button>
-          <p class="form-note" id="form-note"></p>
-        </form>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <!-- ========== FOOTER ========== -->
   <footer id="footer">
     <div class="footer-container">
-      <div class="footer-logo">
-        <span class="logo-bracket">&lt;</span>hari<span class="logo-accent">.</span>dev<span
-          class="logo-bracket">/&gt;</span>
+      <div class="footer-top">
+        <a href="#hero" class="footer-logo">
+          <span class="logo-code">&lt;</span><span class="logo-text">hari.dev</span><span class="logo-code">/&gt;</span>
+        </a>
+        <p class="footer-tagline">Cloud Infrastructure &amp; DevOps Engineer · Alappuzha, Kerala</p>
+
+        <!-- Social Icons (GitHub, LinkedIn, Email, WhatsApp) -->
+        <div class="footer-socials">
+          <a href="https://github.com/haryyy7" target="_blank" rel="noopener" class="footer-social-icon" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/harisankera/" target="_blank" rel="noopener" class="footer-social-icon" title="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:harisankeranil12@gmail.com" class="footer-social-icon" title="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://wa.me/917907988948" target="_blank" rel="noopener" class="footer-social-icon" title="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
       </div>
-      <p class="footer-tagline">Designed & built by Harisanker A · 2026</p>
-      <div class="footer-socials">
-        <a href="https://github.com/haryyy7" target="_blank" rel="noopener" class="social-link" title="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/harisankera/" target="_blank" rel="noopener" class="social-link"
-          title="LinkedIn">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="mailto:harisankeranil12@gmail.com" class="social-link" title="Email">
-          <i class="fas fa-envelope"></i>
-        </a>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 Harisanker A. All rights reserved.</p>
+        <p class="footer-credit">Crafted with precision &amp; modern web standards</p>
       </div>
-      <p class="footer-built">Built with <span class="heart">♥</span> using HTML, CSS & JavaScript</p>
     </div>
   </footer>
 
+  <!-- Main JavaScript File -->
   <script src="js/main.js"></script>
 </body>
 
