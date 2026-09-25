@@ -151,6 +151,7 @@ img {
 .preloader-content {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.9rem;
 }
 
@@ -158,6 +159,7 @@ img {
   width: 10px;
   height: 10px;
   border-radius: 50%;
+  flex-shrink: 0;
   background: var(--accent-cyan);
   box-shadow: 0 0 12px var(--accent-cyan);
   animation: pulse-dot 1.2s infinite ease-in-out;
@@ -175,7 +177,8 @@ img {
   letter-spacing: -0.02em;
   color: #ffffff;
   display: inline-block;
-  min-width: 220px;
+  width: 260px;
+  text-align: left;
   transition: opacity 0.16s ease, transform 0.16s ease;
 }
 
