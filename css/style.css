@@ -464,15 +464,15 @@ img {
 }
 
 .badge-item {
-  width: 100px;
-  height: 100px;
+  width: 110px;
+  height: 110px;
   border-radius: var(--radius-md);
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid var(--border-light);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+  padding: 8px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
   cursor: default;
   pointer-events: none; /* No button appearance */
@@ -482,7 +482,9 @@ img {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.4));
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.3));
 }
 
 /* Greeting + Name */
@@ -1401,9 +1403,9 @@ img {
     gap: 0.85rem;
   }
   .badge-item {
-    width: 80px;
-    height: 80px;
-    padding: 8px;
+    width: 88px;
+    height: 88px;
+    padding: 7px;
   }
   .about-stats-strip {
     grid-template-columns: 1fr;
